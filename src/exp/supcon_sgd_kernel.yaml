@@ -1,0 +1,15 @@
+program: main_infonce.py
+data_dir: /scratch/data-registry/medical/openbhb
+save_dir:  /scratch/output/brain-age-mri
+model: resnet18
+epochs: 300
+batch_size: 32
+lr: 0.1
+lr_decay: cosine
+optimizer: sgd
+momentum: 0.9
+weight_decay: 1e-4
+kernel: gaussian
+sigma: 1
+trial: 0
+tf: none
