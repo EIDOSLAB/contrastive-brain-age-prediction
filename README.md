@@ -14,6 +14,22 @@ Building accurate Deep Learning (DL) models for brain age prediction is a very r
 
 ## Running 
 
+### Training
+
+The code can be found in the src folder. For training there is a couple of different files: 
+
+- `main_mse.py`: for training baseline MSE/MAE models
+- `main_infonce.py`: for training models with contrastive losses 
+
+For easiness of use, the script `launcher.py` is provided with some predefined experiments which can be found in `src/exp` as YAML template. To launch: 
+
+```
+python3 launcher.py exp/mae.yaml
+```
+
+### Testing on the leaderboard
+
+To test on the official leaderboard of the OpenBHB challenge, first you need to create an account at [https://ramp.studio/](https://ramp.studio/). For the submission to the challenge ([https://ramp.studio/events/brain_age_with_site_removal_open_2022](https://ramp.studio/events/brain_age_with_site_removal_open_2022)), the source code for submission can be found in the `ramp-submission` folder (code for both supervised and contrastive models).
 
 ## Citing
 
